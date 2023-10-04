@@ -362,20 +362,20 @@ body::after {
   }
 }
 @media (min-width: 20em) and (max-width: 96.875em) {
-  @supports (padding-top: clamp( 1.0625rem , 1.0625rem  +  0vw , 1.0625rem )) {
+  @supports (padding-top: clamp( 0.625rem , 0.5111788618rem  +  0.5691056911vw , 1.0625rem )) {
     .header__top {
-      padding-top: clamp( 1.0625rem , 1.0625rem  +  0vw , 1.0625rem );
+      padding-top: clamp( 0.625rem , 0.5111788618rem  +  0.5691056911vw , 1.0625rem );
     }
   }
-  @supports not (padding-top: clamp( 1.0625rem , 1.0625rem  +  0vw , 1.0625rem )) {
+  @supports not (padding-top: clamp( 0.625rem , 0.5111788618rem  +  0.5691056911vw , 1.0625rem )) {
     .header__top {
-      padding-top: calc(1.0625rem + 0 * (100vw - 20rem) / 76.875);
+      padding-top: calc(0.625rem + 0.4375 * (100vw - 20rem) / 76.875);
     }
   }
 }
 @media (max-width: 20em) {
   .header__top {
-    padding-top: 1.0625rem;
+    padding-top: 0.625rem;
   }
 }
 @media (min-width: 96.875em) {
@@ -384,20 +384,20 @@ body::after {
   }
 }
 @media (min-width: 20em) and (max-width: 96.875em) {
-  @supports (padding-bottom: clamp( 1.0625rem , 1.0625rem  +  0vw , 1.0625rem )) {
+  @supports (padding-bottom: clamp( 0.625rem , 0.5111788618rem  +  0.5691056911vw , 1.0625rem )) {
     .header__top {
-      padding-bottom: clamp( 1.0625rem , 1.0625rem  +  0vw , 1.0625rem );
+      padding-bottom: clamp( 0.625rem , 0.5111788618rem  +  0.5691056911vw , 1.0625rem );
     }
   }
-  @supports not (padding-bottom: clamp( 1.0625rem , 1.0625rem  +  0vw , 1.0625rem )) {
+  @supports not (padding-bottom: clamp( 0.625rem , 0.5111788618rem  +  0.5691056911vw , 1.0625rem )) {
     .header__top {
-      padding-bottom: calc(1.0625rem + 0 * (100vw - 20rem) / 76.875);
+      padding-bottom: calc(0.625rem + 0.4375 * (100vw - 20rem) / 76.875);
     }
   }
 }
 @media (max-width: 20em) {
   .header__top {
-    padding-bottom: 1.0625rem;
+    padding-bottom: 0.625rem;
   }
 }
 .header__top-iconlocation::before {
