@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231004131038" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231004131038">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+			<div class="header__top">
+				<div class="header__container __container">
+					<div class="header__top-location">
+						<div class="header__top-iconlocation _icon-location"></div>
+						<div class="header__top-city">
+							<select name="form[]" class="form">
+								<option value="1" selected>Казань</option>
+								<option value="2">Москва</option>
+								<option value="3">Екатеринбург</option>
+								<option value="4">Омск</option>
+							</select>
+						</div>
+					</div>
+					<nav class="header__top-right">
+						<ul class="header__top-rightlist">
+							<li class="header__top-rightlist-item">
+								<a href="#" class="header__top-rightlist-link">Акции</a>
+							</li>
+							<li class="header__top-rightlist-item">
+								<a href="#" class="header__top-rightlist-link">Сборка</a>
+							</li>
+							<li class="header__top-rightlist-item">
+								<a href="#" class="header__top-rightlist-link">Оплата</a>
+							</li>
+							<li class="header__top-rightlist-item">
+								<a href="#" class="header__top-rightlist-link">Доставка</a>
+							</li>
+						</ul>
+					</nav>
+					<nav class="header__top-left">
+						<ul class="header__top-leftlist">
+							<li class="header__top-left-item">
+								<a href="#" class="header__top-left-link">Наши работы</a>
+							</li>
+							<li class="header__top-left-item">
+								<a href="#" class="header__top-left-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="header__middle__container">
+				<div class="header__middle-wrapper">
+					<div class="header__middle-logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+					<div class="header__middle-location">
+						<address class="header__middle-address">ул. Московская, 144 корп. - 1</address>
+						<a href="#" class="header__middle-link">Схема проезда</a>
+					</div>
+					<form action="#" class="search-form__item">
+						<button type="submit" class="search-form__btn _icon-search"></button>
+						<input autocomplete="off" type="text" name="form[]" data-value="Search" placeholder="Поиск" class="search-form__input">
+					</form>
+					<div class="header__middle-call">
+						<a href="tel:89615259191" class="header__middle-phone _icon-phone">8 (961) 525 91 91</a>
+						<button data-popup="#popup" class="header__middle-order">Заказать звонок</button>
+					</div>
+					<div class="header__middle-actions actions__header">
+						<button class="actions__header-user _icon-user">Войти</button>
+						<button class="actions__header-favorite _icon-favorite">Избранное</button>
+						<button class="actions__header-cart _icon-cart">Корзина</button>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom"></div>
+
+		</header>
+
+		<!-- _icon-arrow-down -->
+
+		<div class="header__menu menu">
+			<button type="button" class="menu__icon icon-menu"><span></span></button>
+			<nav class="menu__body">
+				<ul class="menu__list">
+					<li class="menu__item"><a href="" class="menu__link"></a></li>
+				</ul>
+			</nav>
+		</div>
+		<main class="page">
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup call__popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__text">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20231004131038"></script>
+</body>
+
+</html>
