@@ -8,8 +8,8 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231004170729" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231004170729">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231005164256" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231005164256">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,43 +20,45 @@
 		<header class="header">
 			<div class="header__top">
 				<div class="header__container __container">
-					<div class="header__top-location">
-						<div class="header__top-iconlocation _icon-location"></div>
-						<div class="header__top-city">
-							<select name="form[]" class="form">
-								<option value="1" selected>Казань</option>
-								<option value="2">Москва</option>
-								<option value="3">Екатеринбург</option>
-								<option value="4">Омск</option>
-							</select>
+					<div class="header__top-wrapper">
+						<div class="header__top-location">
+							<div class="header__top-iconlocation _icon-location"></div>
+							<div class="header__top-city">
+								<select name="form[]" class="form">
+									<option value="1" selected>Казань</option>
+									<option value="2">Москва</option>
+									<option value="3">Екатеринбург</option>
+									<option value="4">Омск</option>
+								</select>
+							</div>
 						</div>
+						<nav class="header__top-right">
+							<ul class="header__top-rightlist">
+								<li class="header__top-rightlist-item">
+									<a href="#" class="header__top-rightlist-link">Акции</a>
+								</li>
+								<li class="header__top-rightlist-item">
+									<a href="#" class="header__top-rightlist-link">Сборка</a>
+								</li>
+								<li class="header__top-rightlist-item">
+									<a href="#" class="header__top-rightlist-link">Оплата</a>
+								</li>
+								<li class="header__top-rightlist-item">
+									<a href="#" class="header__top-rightlist-link">Доставка</a>
+								</li>
+							</ul>
+						</nav>
+						<nav class="header__top-left">
+							<ul class="header__top-leftlist">
+								<li class="header__top-left-item">
+									<a href="#" class="header__top-left-link">Наши работы</a>
+								</li>
+								<li class="header__top-left-item">
+									<a href="#" class="header__top-left-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
-					<nav class="header__top-right">
-						<ul class="header__top-rightlist">
-							<li class="header__top-rightlist-item">
-								<a href="#" class="header__top-rightlist-link">Акции</a>
-							</li>
-							<li class="header__top-rightlist-item">
-								<a href="#" class="header__top-rightlist-link">Сборка</a>
-							</li>
-							<li class="header__top-rightlist-item">
-								<a href="#" class="header__top-rightlist-link">Оплата</a>
-							</li>
-							<li class="header__top-rightlist-item">
-								<a href="#" class="header__top-rightlist-link">Доставка</a>
-							</li>
-						</ul>
-					</nav>
-					<nav class="header__top-left">
-						<ul class="header__top-leftlist">
-							<li class="header__top-left-item">
-								<a href="#" class="header__top-left-link">Наши работы</a>
-							</li>
-							<li class="header__top-left-item">
-								<a href="#" class="header__top-left-link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
 				</div>
 			</div>
 			<div class="header__middle__container">
@@ -81,77 +83,89 @@
 						<button class="actions__header-favorite _icon-favorite">Избранное</button>
 						<button class="actions__header-cart _icon-cart">Корзина</button>
 					</div>
+					<div class="menu__icon-wrapper">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+					</div>
 				</div>
 			</div>
 			<div class="header__bottom">
-				<div class="header__bottom__container">
-					<div class="header__menu menu">
-						<nav class="menu__body">
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="#" class="menu__link _icon-arrow-down">КУХНИ</a>
-									<ul class="menu__sub-list">
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Модульные кухни</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Готовые комплекты</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Маленькие кухни</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Угловые кухни</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Кухонные уголки</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Столы кухонные</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Стулья для кухни</a>
-										</li>
-										<li class="menu__sub-item">
-											<a href="#" class="menu__sub-link">Комплектующие</a>
-										</li>
-									</ul>
-								</li>
-								<li class="menu__item"><a href="#" class="menu__link">ГОСТИННЫЕ</a></li>
-								<li class="menu__item"><a href="#" class="menu__link _icon-arrow-down"">СПАЛЬНИ</a>
-								<ul class=" menu__sub-list">
-								<li class="menu__sub-item">
-									<a href="#" class="menu__sub-link">Модульные спальни</a>
-								</li>
-								<li class="menu__sub-item">
-									<a href="#" class="menu__sub-link">Готовые комплекты</a>
-								</li>
-								<li class="menu__sub-item">
-									<a href="#" class="menu__sub-link">Маленькие спальни</a>
-								</li>
-								<li class="menu__sub-item">
-									<a href="#" class="menu__sub-link">Угловые спальни</a>
-								</li>
+				<div class="header__container">
+					<div class="header__bottom-wrapper">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<h2 class="header__bottom-title">Каталог</h2>
+								<ul data-spollers="767.98,max" class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">КУХНИ</a>
+										<button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
+										<ul class="menu__sub-list">
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Модульные кухни</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Готовые комплекты</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Маленькие кухни</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Угловые кухни</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Кухонные уголки</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Столы кухонные</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Стулья для кухни</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Комплектующие</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">ГОСТИННЫЕ</a>
+										<button data-spoller type="button" class="menu__arrow _icon-arrow-down"></button>
+										<ul class="menu__sub-list">
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Модульные гостиные</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Готовые комплекты</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Маленькие гостиные</a>
+											</li>
+											<li class="menu__sub-item">
+												<a href="#" class="menu__sub-link">Угловые гостиные</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">СПАЛЬНИ</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">ПРИХОЖИЕ</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">ШКАФЫ-КУПЕ</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">ДЕТСКИЕ</a>
+									</li>
+									<li class="menu__item">
+										<a href="#" class="menu__link">ДИВАНЫ</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<button type="button" class="header__bottom-btn">ГДЕ ПОСМОТРЕТЬ</button>
 
-							</ul>
-							</li>
-							<li class="menu__item"><a href="#" class="menu__link">ПРИХОЖИЕ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">ШКАФЫ-КУПЕ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">ДЕТСКИЕ</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">ДИВАНЫ</a></li>
-							<li class="menu__item"><button type="button" class="menu__button">ГДЕ ПОСМОТРЕТЬ</button>
-							</li>
-							</ul>
-						</nav>
 					</div>
-					<!-- <button type="button" class="menu__icon icon-menu"><span></span></button> -->
 				</div>
-			</div>
 		</header>
-
-
-
-
 		<main class="page">
 		</main>
 		<footer class="footer">
@@ -170,7 +184,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20231004170729"></script>
+	<script src="js/app.min.js?_v=20231005164256"></script>
 </body>
 
 </html>
