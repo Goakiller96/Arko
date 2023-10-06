@@ -1106,6 +1106,9 @@
         const headerObserver = new IntersectionObserver(callback);
         headerObserver.observe(headerElement);
     };
+    document.querySelector(".menu__icon").addEventListener("click", (function() {
+        document.querySelector(".menu__body-decor").classList.toggle("_open-decor");
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();
