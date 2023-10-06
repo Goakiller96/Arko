@@ -265,6 +265,18 @@ a {
   cursor: pointer;
 }
 
+@media (max-width: 47.99875em) {
+  .select__value {
+    background-color: #BDBDBD;
+  }
+}
+
+@media (max-width: 47.99875em) {
+  .select__options {
+    top: -150px;
+  }
+}
+
 body::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.5);
@@ -353,9 +365,17 @@ body::after {
   display: flex;
   align-items: center;
 }
-.header__top {
-  padding: 17px 0px 17px 0px;
-  border-bottom: 1px solid #BDBDBD;
+@media (max-width: 47.99875em) {
+  .header__top-wrapper {
+    margin-left: -15px;
+    display: block;
+  }
+}
+@media (min-width: 47.99875em) {
+  .header__top {
+    padding: 17px 0px 17px 0px;
+    border-bottom: 1px solid #BDBDBD;
+  }
 }
 .header__top-iconlocation::before {
   color: #384685;
@@ -363,6 +383,11 @@ body::after {
 }
 .header__top-location {
   display: flex;
+}
+@media (max-width: 47.99875em) {
+  .header__top-location {
+    margin-left: 15px;
+  }
 }
 .header__top-city {
   position: relative;
@@ -429,6 +454,62 @@ body::after {
     margin-left: 0.3125rem;
   }
 }
+@media (max-width: 47.99875em) {
+  .header__top-rightlist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 96.875em) {
+  .header__top-rightlist {
+    column-gap: 0.00000625rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 96.875em) {
+  @supports (column-gap: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+    .header__top-rightlist {
+      column-gap: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem );
+    }
+  }
+  @supports not (column-gap: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+    .header__top-rightlist {
+      column-gap: calc(0.00000625rem + 0 * (100vw - 20rem) / 76.875);
+    }
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
+  .header__top-rightlist {
+    column-gap: 0.00000625rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 96.875em) {
+  .header__top-rightlist {
+    margin-left: 0.00000625rem;
+  }
+}
+@media (max-width: 47.99875em) and (min-width: 20em) and (max-width: 96.875em) {
+  @supports (margin-left: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+    .header__top-rightlist {
+      margin-left: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem );
+    }
+  }
+  @supports not (margin-left: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+    .header__top-rightlist {
+      margin-left: calc(0.00000625rem + 0 * (100vw - 20rem) / 76.875);
+    }
+  }
+}
+@media (max-width: 47.99875em) and (max-width: 20em) {
+  .header__top-rightlist {
+    margin-left: 0.00000625rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .header__top-rightlist-item {
+    margin-bottom: 8px;
+    line-height: 1.2222222222;
+  }
+}
 .header__top-rightlist-link {
   transition: all 0.3s ease 0s;
 }
@@ -461,6 +542,18 @@ body::after {
 @media (max-width: 20em) {
   .header__top-leftlist {
     column-gap: 0.625rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .header__top-leftlist {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 47.99875em) {
+  .header__top-left-item {
+    margin-bottom: 0.5rem;
+    line-height: 1.2222222222;
   }
 }
 .header__top-left-link {
@@ -868,7 +961,7 @@ body::after {
     top: 0rem;
     overflow: auto;
     background-color: #F2F2F2;
-    padding: 22px 30px 30px 15px;
+    padding: 22px 30px 85px 15px;
     transition: left 0.3s ease 0s;
     z-index: 4;
   }
@@ -896,6 +989,25 @@ body::after {
     display: flex;
     justify-content: flex-end;
   }
+}
+.menu__body-decor {
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 47.99875em) {
+  .menu__body-decor {
+    width: 100%;
+    height: 73px;
+    background-color: #BDBDBD;
+    position: fixed;
+    max-width: 320px;
+    bottom: 0;
+    left: -100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.menu__body-decor._open-decor {
+  left: 0;
 }
 @media (min-width: 47.99875em) {
   .menu__list {
@@ -929,6 +1041,11 @@ body::after {
 @media (max-width: 61.99875em) {
   .menu__list {
     justify-items: center;
+  }
+}
+@media (max-width: 47.99875em) {
+  .menu__list {
+    margin-bottom: 2.8125rem;
   }
 }
 .menu__item {
@@ -1057,7 +1174,7 @@ body::after {
 }
 @media (max-width: 47.99875em) {
   .menu__sub-list {
-    margin: 10px -15px 0px 0px;
+    margin: 10px -15px 15px 0px;
   }
 }
 .menu__sub-item {
@@ -1084,6 +1201,11 @@ body::after {
   }
 }
 
+@media (min-width: 47.99875em) {
+  .menu__icon-wrapper {
+    display: none;
+  }
+}
 @media (max-width: 47.99875em) {
   .menu__icon-wrapper {
     background-color: #000;
