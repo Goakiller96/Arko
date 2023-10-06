@@ -8,8 +8,8 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231006163655" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231006163655">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231006171114" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231006171114">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -175,7 +175,7 @@
 			</div>
 		</footer>
 	</div>
-	<div id="popup" aria-hidden="true" class="popup call__popup">
+	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">Закрыть</button>
@@ -238,12 +238,55 @@
 							<input type="password" placeholder="Пароль" id="enter__popup-second" class="enter__popup-input">
 						</div>
 						<button type="submit" class="enter__popup-btn">Войти</button>
-						<p class="signup-link">Нет аккаунта?<a data-popup="#popup" href="#">Регистрация</a></p>
+						<p class="signup-link">Нет аккаунта?<a data-popup="#register-popup" href="#">Регистрация</a></p>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231006163655"></script>
+
+
+
+
+	<div id="register-popup" aria-hidden="true" class="popup  register__popup">
+		<div class="popup__wrapper register__popup">
+			<div class="popup__content register__popup">
+				<button data-close type="button" class="popup__close">&times;</button>
+				<div class="popup__text register__popup">
+					<form class="register__form">
+						<p class="register__title">Регистрация</p>
+						<div class="flex">
+							<label>
+								<input required="" placeholder="" type="text" class="input">
+								<span>Имя</span>
+							</label>
+
+							<label>
+								<input required="" placeholder="" type="text" class="input">
+								<span>Фамилия</span>
+							</label>
+						</div>
+
+						<label>
+							<input required="" placeholder="" type="email" class="input">
+							<span>Email</span>
+						</label>
+
+						<label>
+							<input required="" placeholder="" type="password" class="input">
+							<span>Пароль</span>
+						</label>
+						<label>
+							<input required="" placeholder="" type="password" class="input">
+							<span>Подтвердите пароль</span>
+						</label>
+						<button class="submit">зарегистрироваться</button>
+						<p class="signin">Уже есть аккаунт? <a data-popup="#enter-popup" href="#">Вход</a> </p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231006171114"></script>
 
 </html>
