@@ -432,28 +432,6 @@ body::after {
     column-gap: 0.625rem;
   }
 }
-@media (min-width: 96.875em) {
-  .header__top-rightlist {
-    margin-left: 1.9375rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 96.875em) {
-  @supports (margin-left: clamp( 0.3125rem , -0.1102642276rem  +  2.1138211382vw , 1.9375rem )) {
-    .header__top-rightlist {
-      margin-left: clamp( 0.3125rem , -0.1102642276rem  +  2.1138211382vw , 1.9375rem );
-    }
-  }
-  @supports not (margin-left: clamp( 0.3125rem , -0.1102642276rem  +  2.1138211382vw , 1.9375rem )) {
-    .header__top-rightlist {
-      margin-left: calc(0.3125rem + 1.625 * (100vw - 20rem) / 76.875);
-    }
-  }
-}
-@media (max-width: 20em) {
-  .header__top-rightlist {
-    margin-left: 0.3125rem;
-  }
-}
 @media (max-width: 47.99875em) {
   .header__top-rightlist {
     flex-direction: column;
