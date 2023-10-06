@@ -8,8 +8,8 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231006154932" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231006154932">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231006163655" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231006163655">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -193,13 +193,13 @@
 				<div class="popup__text order-popup">
 					<form action="#" class="order-popup__form">
 						<div class="input-container">
-							<input type="text" id="input" required="">
-							<label for="input" class="label">Ваше имя</label>
+							<input type="text" id="input-first" required="">
+							<label for="input-first" class="label">Ваше имя</label>
 							<div class="underline"></div>
 						</div>
 						<div class="input-container">
-							<input type="tel" id="input" required="">
-							<label for="input" class="label">Номер телефона</label>
+							<input type="tel" id="input-second" required="">
+							<label for="input-second" class="label">Номер телефона</label>
 							<div class="underline"></div>
 						</div>
 						<button type="submit" class="order-popup__button">
@@ -230,20 +230,20 @@
 					<form class="enter__popup-form">
 						<p class="form-title">Вход</p>
 						<div class="enter__popup-container">
-							<input type="email" class="enter__popup-input" placeholder="Enter email">
-							<span>
-							</span>
+							<input type="email" class="enter__popup-input" id="enter__popup-first" placeholder="Enter email">
+							<!-- <span>
+						</span> -->
 						</div>
 						<div class="enter__popup-container">
-							<input type="password" placeholder="Пароль" class="enter__popup-input">
+							<input type="password" placeholder="Пароль" id="enter__popup-second" class="enter__popup-input">
 						</div>
 						<button type="submit" class="enter__popup-btn">Войти</button>
-						<p class="signup-link">Нет аккаунта?<a href="#">Регистрация</a></p>
+						<p class="signup-link">Нет аккаунта?<a data-popup="#popup" href="#">Регистрация</a></p>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231006154932"></script>
+	<script src="js/app.min.js?_v=20231006163655"></script>
 
 </html>
