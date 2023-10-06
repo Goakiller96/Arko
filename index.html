@@ -8,8 +8,8 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231006131224" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20231006131224">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231006154932" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231006154932">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,10 +76,10 @@
 					</form>
 					<div class="header__middle-call">
 						<a href="tel:89615259191" class="header__middle-phone _icon-phone">8 (961) 525 91 91</a>
-						<button data-popup="#popup" class="header__middle-order">Заказать звонок</button>
+						<button data-popup="#order-popup" class="header__middle-order">Заказать звонок</button>
 					</div>
 					<div class="header__middle-actions actions__header">
-						<button class="actions__header-user _icon-user">Войти</button>
+						<button data-popup="#enter-popup" class="actions__header-user _icon-user">Войти</button>
 						<button class="actions__header-favorite _icon-favorite">Избранное</button>
 						<button class="actions__header-cart _icon-cart">Корзина</button>
 					</div>
@@ -175,7 +175,6 @@
 			</div>
 		</footer>
 	</div>
-
 	<div id="popup" aria-hidden="true" class="popup call__popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -186,7 +185,65 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20231006131224"></script>
-</body>
+
+	<div id="order-popup" aria-hidden="true" class="popup call__popup">
+		<div class="popup__wrapper order-popup">
+			<div class="popup__content order-popup">
+				<button data-close type="button" class="popup__close order-popup__close">&times;</button>
+				<div class="popup__text order-popup">
+					<form action="#" class="order-popup__form">
+						<div class="input-container">
+							<input type="text" id="input" required="">
+							<label for="input" class="label">Ваше имя</label>
+							<div class="underline"></div>
+						</div>
+						<div class="input-container">
+							<input type="tel" id="input" required="">
+							<label for="input" class="label">Номер телефона</label>
+							<div class="underline"></div>
+						</div>
+						<button type="submit" class="order-popup__button">
+							<div>
+								<span>
+									<p>Отправить</p>
+								</span>
+							</div>
+							<div>
+								<span>
+									<p>Спасибо</p>
+								</span>
+							</div>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="enter-popup" aria-hidden="true" class="popup enter__popup">
+		<div class="popup__wrapper  enter__popup-wrapper">
+			<div class="popup__content  enter__popup-content">
+				<button data-close type="button" class="popup__close">&times;</button>
+				<div class="popup__text enter__popup-text">
+					<form class="enter__popup-form">
+						<p class="form-title">Вход</p>
+						<div class="enter__popup-container">
+							<input type="email" class="enter__popup-input" placeholder="Enter email">
+							<span>
+							</span>
+						</div>
+						<div class="enter__popup-container">
+							<input type="password" placeholder="Пароль" class="enter__popup-input">
+						</div>
+						<button type="submit" class="enter__popup-btn">Войти</button>
+						<p class="signup-link">Нет аккаунта?<a href="#">Регистрация</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20231006154932"></script>
 
 </html>
