@@ -357,6 +357,7 @@ body::after {
   right: 20px;
   top: 0px;
   transition: all 0.3s ease 0s;
+  z-index: 5;
 }
 @media (any-hover: hover) {
   .popup__close:hover {
@@ -550,6 +551,142 @@ button:hover div {
   }
 }
 
+.register__popup {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.register__title {
+  font-size: 28px;
+  color: #1e90ff;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.register__title::before, .register__title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #1e90ff;
+}
+
+.register__title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #1e90ff;
+}
+
+.register__title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: #1e90ff;
+}
+
+.signin a:hover {
+  text-decoration: underline royalblue;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
+
+.register__form label {
+  position: relative;
+}
+
+.register__form label .input {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+}
+
+.register__form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.register__form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.register__form label .input:focus + span, .form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.register__form label .input:valid + span {
+  color: green;
+}
+
+.submit {
+  border: none;
+  outline: none;
+  background-color: #1e90ff;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  background-color: #385ac2;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
 [class*=-ibg] {
   position: relative;
 }
