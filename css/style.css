@@ -1336,33 +1336,11 @@ button:hover div {
   font-weight: 700;
   color: inherit;
   text-transform: uppercase;
+  font-size: 1.25rem;
   transition: color 0.3s ease 0s;
-}
-@media (min-width: 96.875em) {
-  .menu__link {
-    font-size: 1.25rem;
-  }
-}
-@media (min-width: 20em) and (max-width: 96.875em) {
-  @supports (font-size: clamp( 0.75rem , 0.6199186992rem  +  0.6504065041vw , 1.25rem )) {
-    .menu__link {
-      font-size: clamp( 0.75rem , 0.6199186992rem  +  0.6504065041vw , 1.25rem );
-    }
-  }
-  @supports not (font-size: clamp( 0.75rem , 0.6199186992rem  +  0.6504065041vw , 1.25rem )) {
-    .menu__link {
-      font-size: calc(0.75rem + 0.5 * (100vw - 20rem) / 76.875);
-    }
-  }
-}
-@media (max-width: 20em) {
-  .menu__link {
-    font-size: 0.75rem;
-  }
 }
 @media (max-width: 47.99875em) {
   .menu__link {
-    font-size: 18px;
     font-weight: 400;
     line-height: 1.9444444444;
   }
