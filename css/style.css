@@ -1671,7 +1671,7 @@ button:hover div {
   }
 }
 .footer__menu-list {
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 3.125rem;
