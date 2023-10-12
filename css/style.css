@@ -1134,9 +1134,8 @@ button:hover div {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
-  margin-left: 3px;
+  margin-left: 2.5rem;
   white-space: nowrap;
-  margin-left: 0.9375rem;
   transition: all 0.3s ease 0s;
 }
 @media (min-width: 96.875em) {
@@ -1701,6 +1700,7 @@ button:hover div {
 }
 .footer__address-location {
   font-weight: 700;
+  font-style: normal;
 }
 .footer__email {
   display: flex;
@@ -1765,7 +1765,7 @@ button:hover div {
 @media (max-width: 47.99875em) {
   .footer__menu-list {
     flex-direction: column;
-    row-gap: 0.9375rem;
+    row-gap: 0.3125rem;
     margin-bottom: 1.875rem;
   }
 }
@@ -2067,13 +2067,24 @@ button:hover div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  min-height: 5.875rem;
+}
+@media (max-width: 39em) {
+  .advantages__item {
+    justify-content: flex-start;
+  }
 }
 .advantages__image {
   margin-right: 0.625rem;
 }
 .advantages__image img {
-  width: 44px;
+  flex: 1 1 44px;
   height: 44px;
+}
+@media (max-width: 39em) {
+  .advantages__image img {
+    margin-right: 15px;
+  }
 }
 .advantages__item-title {
   font-weight: 700;
