@@ -2280,6 +2280,7 @@ button:hover div {
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   align-self: center;
+  align-items: start;
   margin-bottom: 2.5rem;
 }
 .popular__item {
@@ -2383,6 +2384,20 @@ button:hover div {
     align-items: center;
   }
 }
+@media (any-hover: hover) {
+  .popular__item:hover {
+    margin-bottom: -300px;
+    position: relative;
+    z-index: 10;
+  }
+  .popular__item:hover .content-popular__colors,
+.popular__item:hover .bottom-popular__sizes {
+    transition: all 0.5s ease 0s;
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+}
 .popular__image {
   width: 100%;
 }
@@ -2427,6 +2442,13 @@ button:hover div {
   align-items: center;
   gap: 13px;
   margin-bottom: 1rem;
+}
+@media (min-width: 61.99875em) {
+  .content-popular__colors {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
 }
 
 .price-popular {
@@ -2474,8 +2496,6 @@ button:hover div {
 }
 .bottom-popular__button {
   min-height: 3.3125rem;
-  background-color: #384685;
-  color: #fff;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 0.3125rem;
@@ -2548,22 +2568,26 @@ button:hover div {
 }
 @media (any-hover: hover) {
   .bottom-popular__button:hover {
-    color: #E13B3F;
+    color: #fff;
+    background-color: #384685;
   }
 }
 .bottom-popular__favorite::before {
   font-size: 30px;
+  color: #E13B3F;
   transition: all 0.3s ease 0s;
-}
-@media (any-hover: hover) {
-  .bottom-popular__favorite:hover::before {
-    color: #E13B3F;
-  }
 }
 .bottom-popular__sizes {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+}
+@media (min-width: 61.99875em) {
+  .bottom-popular__sizes {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
 }
 .bottom-popular__items {
   display: flex;
