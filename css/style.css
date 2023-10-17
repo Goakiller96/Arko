@@ -2242,26 +2242,32 @@ button:hover div {
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
+.popular__top-title {
+  padding-right: 15px;
+  font-weight: 700;
+  line-height: 1.3333333333;
+  text-transform: uppercase;
+}
 @media (min-width: 96.875em) {
   .popular__top-title {
-    margin-bottom: 0.00000625rem;
+    font-size: 1.875rem;
   }
 }
 @media (min-width: 20em) and (max-width: 96.875em) {
-  @supports (margin-bottom: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+  @supports (font-size: clamp( 1.375rem , 1.2449186992rem  +  0.6504065041vw , 1.875rem )) {
     .popular__top-title {
-      margin-bottom: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem );
+      font-size: clamp( 1.375rem , 1.2449186992rem  +  0.6504065041vw , 1.875rem );
     }
   }
-  @supports not (margin-bottom: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+  @supports not (font-size: clamp( 1.375rem , 1.2449186992rem  +  0.6504065041vw , 1.875rem )) {
     .popular__top-title {
-      margin-bottom: calc(0.00000625rem + 0 * (100vw - 20rem) / 76.875);
+      font-size: calc(1.375rem + 0.5 * (100vw - 20rem) / 76.875);
     }
   }
 }
 @media (max-width: 20em) {
   .popular__top-title {
-    margin-bottom: 0.00000625rem;
+    font-size: 1.375rem;
   }
 }
 @media (any-hover: hover) {
