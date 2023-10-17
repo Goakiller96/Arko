@@ -2242,8 +2242,27 @@ button:hover div {
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
-.popular__top-title {
-  margin-bottom: 0;
+@media (min-width: 96.875em) {
+  .popular__top-title {
+    margin-bottom: 0.00000625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 96.875em) {
+  @supports (margin-bottom: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+    .popular__top-title {
+      margin-bottom: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem );
+    }
+  }
+  @supports not (margin-bottom: clamp( 0.00000625rem , 0.00000625rem  +  0vw , 0.00000625rem )) {
+    .popular__top-title {
+      margin-bottom: calc(0.00000625rem + 0 * (100vw - 20rem) / 76.875);
+    }
+  }
+}
+@media (max-width: 20em) {
+  .popular__top-title {
+    margin-bottom: 0.00000625rem;
+  }
 }
 @media (any-hover: hover) {
   .popular__top-link:hover {
@@ -2351,6 +2370,11 @@ button:hover div {
 @media (max-width: 20em) {
   .popular__item {
     padding-bottom: 0.9375rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .popular__item {
+    align-items: center;
   }
 }
 .popular__image {
