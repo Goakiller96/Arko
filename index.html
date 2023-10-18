@@ -8,10 +8,10 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231018125521" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20231018125521" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20231018125521">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231018161023" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20231018161023" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231018161023">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -609,7 +609,7 @@
 							</div>
 						</div>
 					</div>
-					<div data-showmore class="popular">
+					<div data-showmore class="popular__showmore">
 						<div data-showmore-content="0" class="popular__content">
 							<div class="popular__wrapper">
 								<div class="popular__item">
@@ -850,6 +850,40 @@
 								еще</span><span>Скрыть</span></button>
 					</div>
 
+				</div>
+			</section>
+			<section class="works">
+				<div class="works__container">
+					<div class="works__top">
+						<h2 class="works__top-title">НАШИ РАБОТЫ</h2>
+						<a href="#" class="works__top-link">Смотреть все работы</a>
+					</div>
+					<div class="works__wrapper">
+						<div class="works__item works__item-1">
+							<a href="#" class="works__image">
+								<picture><source srcset="img//works/works-1.webp" type="image/webp"><img src="img//works/works-1.jpg" alt=""></picture>
+							</a>
+							<h4 class="works__category">КУХНЯ ГЛЕТЧЕР</h4>
+						</div>
+						<div class="works__item works__item-2">
+							<a href="#" class="works__image">
+								<picture><source srcset="img//works/works-2.webp" type="image/webp"><img src="img//works/works-2.jpg" alt=""></picture>
+							</a>
+							<h4 class="works__category">ГОСТИННАЯ ДЕНВЕР</h4>
+						</div>
+						<div class="works__item works__item-3">
+							<a href="#" class="works__image">
+								<picture><source srcset="img//works/works-3.webp" type="image/webp"><img src="img//works/works-3.jpg" alt=""></picture>
+							</a>
+							<h4 class="works__category">КУХНЯ ЛОНДОН</h4>
+						</div>
+						<div class="works__item works__item-4">
+							<a href="#" class="works__image">
+								<picture><source srcset="img//works/works-4.webp" type="image/webp"><img src="img//works/works-4.jpg" alt=""></picture>
+							</a>
+							<h4 class="works__category">КУХНЯ АМЕЛИ</h4>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -1095,46 +1129,46 @@
 
 
 
-	<div id="register-popup" aria-hidden="true" class="popup  register__popup">
-		<div class="popup__wrapper register__popup">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">&times;</button>
-				<div class="popup__text register__popup">
-					<form class="register__form">
-						<p class="register__title">Регистрация</p>
-						<div class="flex">
-							<label>
-								<input required="" placeholder="" type="text" class="input">
-								<span>Имя</span>
-							</label>
-
-							<label>
-								<input required="" placeholder="" type="text" class="input">
-								<span>Фамилия</span>
-							</label>
-						</div>
-
+	<!-- <div id="register-popup" aria-hidden="true" class="popup  register__popup">
+	<div class="popup__wrapper register__popup">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">&times;</button>
+			<div class="popup__text register__popup">
+				<form class="register__form">
+					<p class="register__title">Регистрация</p>
+					<div class="flex">
 						<label>
-							<input required="" placeholder="" type="email" class="input">
-							<span>Email</span>
+							<input required="" placeholder="" type="text" class="input">
+							<span>Имя</span>
 						</label>
 
 						<label>
-							<input required="" placeholder="" type="password" class="input">
-							<span>Пароль</span>
+							<input required="" placeholder="" type="text" class="input">
+							<span>Фамилия</span>
 						</label>
-						<label>
-							<input required="" placeholder="" type="password" class="input">
-							<span>Подтвердите пароль</span>
-						</label>
-						<button class="submit">зарегистрироваться</button>
-						<p class="signin">Уже есть аккаунт? <a data-popup="#enter-popup" href="#">Вход</a> </p>
-					</form>
-				</div>
+					</div>
+
+					<label>
+						<input required="" placeholder="" type="email" class="input">
+						<span>Email</span>
+					</label>
+
+					<label>
+						<input required="" placeholder="" type="password" class="input">
+						<span>Пароль</span>
+					</label>
+					<label>
+						<input required="" placeholder="" type="password" class="input">
+						<span>Подтвердите пароль</span>
+					</label>
+					<button class="submit">зарегистрироваться</button>
+					<p class="signin">Уже есть аккаунт? <a data-popup="#enter-popup" href="#">Вход</a> </p>
+				</form>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231018125521"></script>
+</div> -->
+	<script src="js/app.min.js?_v=20231018161023"></script>
 </body>
 
 </html>
