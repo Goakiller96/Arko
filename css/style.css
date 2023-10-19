@@ -2651,10 +2651,12 @@ body::after {
   background-color: #F3E7C6;
 }
 
-.slick-dots {
-  visibility: hidden;
-  opacity: 0;
-  height: 0;
+@media (min-width: 61.99875em) {
+  .slick-dots {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
 }
 
 @media (min-width: 96.875em) {
@@ -2758,10 +2760,24 @@ body::after {
   overflow: hidden;
   position: relative;
 }
+.works__item::before {
+  content: "";
+  transition: all 0.3s ease 0s;
+}
 @media (any-hover: hover) {
   .works__item:hover .works__category {
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
     color: #E13B3F;
+  }
+  .works__item:hover::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 }
 @media (max-width: 47.99875em) {
