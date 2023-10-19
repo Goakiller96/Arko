@@ -8,9 +8,9 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231018161023" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20231018161023" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20231018161023">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap&_v=20231019164818" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20231019164818" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231019164818">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -886,6 +886,27 @@
 					</div>
 				</div>
 			</section>
+			<section class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__wrapper">
+						<div class="contacts__info info-contacts">
+							<!-- <div class="info-contacts__image">
+								<picture><source srcset="img/contacts-bg.webp" type="image/webp"><img src="img/contacts-bg.jpg" alt=""></picture>
+							</div> -->
+							<div class="info-contacts__body">
+								<h4 class="info-contacts__body-title">НАШИ КОНТАКТЫ</h4>
+								<address class="info-contacts__body-address">Краснодар, Московская 144 корпус -1
+								</address>
+								<a href="tel:79615259191" class="info-contacts__body-phone">+7 961-525-91-91</a>
+								<button class="info-contacts__body-button btn">ЗАДАТЬ ВОПРОС</button>
+							</div>
+						</div>
+						<div class="contacts__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13399.42994968818!2d38.99529518986007!3d45.08816256287386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1697711650280!5m2!1sru!2sru" max-width="600" width="100%" height="488" style="border:0;" allowfullscreen="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -1119,7 +1140,7 @@
 							<span>Пароль</span>
 						</label>
 						<button class="submit">Войти</button>
-						<p class="signin">Нет аккаунта?<a data-popup="#register-popup" href="#">Регистрация</a> </p>
+						<p class="signin">Нет аккаунта?<a data-popup="#register-popup" href="#">Регистрация</a></p>
 					</form>
 				</div>
 			</div>
@@ -1129,46 +1150,46 @@
 
 
 
-	<!-- <div id="register-popup" aria-hidden="true" class="popup  register__popup">
-	<div class="popup__wrapper register__popup">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">&times;</button>
-			<div class="popup__text register__popup">
-				<form class="register__form">
-					<p class="register__title">Регистрация</p>
-					<div class="flex">
+	<div id="register-popup" aria-hidden="true" class="popup  register__popup">
+		<div class="popup__wrapper register__popup">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">&times;</button>
+				<div class="popup__text register__popup">
+					<form class="register__form">
+						<p class="register__title">Регистрация</p>
+						<div class="flex">
+							<label>
+								<input required="" placeholder="" type="text" class="input">
+								<span>Имя</span>
+							</label>
+
+							<label>
+								<input required="" placeholder="" type="text" class="input">
+								<span>Фамилия</span>
+							</label>
+						</div>
+
 						<label>
-							<input required="" placeholder="" type="text" class="input">
-							<span>Имя</span>
+							<input required="" placeholder="" type="email" class="input">
+							<span>Email</span>
 						</label>
 
 						<label>
-							<input required="" placeholder="" type="text" class="input">
-							<span>Фамилия</span>
+							<input required="" placeholder="" type="password" class="input">
+							<span>Пароль</span>
 						</label>
-					</div>
-
-					<label>
-						<input required="" placeholder="" type="email" class="input">
-						<span>Email</span>
-					</label>
-
-					<label>
-						<input required="" placeholder="" type="password" class="input">
-						<span>Пароль</span>
-					</label>
-					<label>
-						<input required="" placeholder="" type="password" class="input">
-						<span>Подтвердите пароль</span>
-					</label>
-					<button class="submit">зарегистрироваться</button>
-					<p class="signin">Уже есть аккаунт? <a data-popup="#enter-popup" href="#">Вход</a> </p>
-				</form>
+						<label>
+							<input required="" placeholder="" type="password" class="input">
+							<span>Подтвердите пароль</span>
+						</label>
+						<button class="submit">зарегистрироваться</button>
+						<p class="signin">Уже есть аккаунт? <a data-popup="#enter-popup" href="#">Вход</a> </p>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20231018161023"></script>
+	<script src="js/app.min.js?_v=20231019164818"></script>
 </body>
 
 </html>
