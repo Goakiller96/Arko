@@ -2949,18 +2949,18 @@ body::after {
 }
 @media (min-width: 96.875em) {
   .contacts__info {
-    padding-right: 0.9375rem;
+    padding-right: 1.875rem;
   }
 }
 @media (min-width: 20em) and (max-width: 96.875em) {
-  @supports (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
+  @supports (padding-right: clamp( 0.9375rem , 0.693597561rem  +  1.2195121951vw , 1.875rem )) {
     .contacts__info {
-      padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem );
+      padding-right: clamp( 0.9375rem , 0.693597561rem  +  1.2195121951vw , 1.875rem );
     }
   }
-  @supports not (padding-right: clamp( 0.9375rem , 0.9375rem  +  0vw , 0.9375rem )) {
+  @supports not (padding-right: clamp( 0.9375rem , 0.693597561rem  +  1.2195121951vw , 1.875rem )) {
     .contacts__info {
-      padding-right: calc(0.9375rem + 0 * (100vw - 20rem) / 76.875);
+      padding-right: calc(0.9375rem + 0.9375 * (100vw - 20rem) / 76.875);
     }
   }
 }
