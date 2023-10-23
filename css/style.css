@@ -1256,6 +1256,7 @@ body::after {
     left: -100%;
     display: flex;
     align-items: center;
+    z-index: 15;
   }
 }
 .menu__body-decor._open-decor {
@@ -2344,7 +2345,7 @@ body::after {
 }
 .popular__tags {
   position: absolute;
-  z-index: 5;
+  z-index: 3;
   text-transform: uppercase;
   color: #fff;
   display: flex;
